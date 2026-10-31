@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "这是我的第一篇博客",
+    "slug": "这是我的第一篇博客",
+    "body": "# Hello\n\n这是一篇 **Markdown** 文章。\n\n- 列表项一\n- 列表项二\n\n```js\nconsole.log(\"hello\");\n```\n\n> 这是一段引用",
+    "excerpt": "这是一篇 Markdown 文章。",
+    "labels": [
+      "教程",
+      "分享"
+    ],
+    "author": "testuser",
+    "avatar": "https://github.com/testuser.png",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:00:00Z",
+    "url": "https://github.com/testuser/blog/issues/1"
+  }
+]

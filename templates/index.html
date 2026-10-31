@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ===== 头部：头像 + 介绍 ===== -->
+    <header class="header">
+      <img
+        class="header-avatar"
+        src="https://github.com/yourusername.png"
+        alt="Avatar"
+        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><circle cx=%22100%22 cy=%22100%22 r=%22100%22 fill=%22%2324292f%22/><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2280%22 font-family=%22sans-serif%22>👤</text></svg>'"
+      />
+      <div class="header-info">
+        <h1 class="header-name">Your Name</h1>
+        <p class="header-bio">全栈开发者 · 热爱开源 · 用代码改变世界</p>
+        <div class="header-stats">
+          <span class="stat"><strong id="article-count">0</strong> 篇文章</span>
+          <a class="header-link" href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== 文章列表 ===== -->
+    <main>
+      <div class="repository-section">
+        <div class="repo-nav">
+          <div class="repo-tab selected">文章</div>
+          <span class="counter" id="tab-counter">0</span>
+        </div>
+
+        <div id="articles-container">
+          <!-- ARTICLES -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com" target="_blank">GitHub</a> &middot;
+      由 <a href="https://pages.github.com" target="_blank">GitHub Pages</a> 提供托管 &middot;
+      基于 Issue 驱动的博客系统
+    </footer>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
