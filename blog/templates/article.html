@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><!-- ARTICLE_TITLE --> — Blog</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ===== 导航回首页 ===== -->
+    <nav class="breadcrumb">
+      <a href="/" class="breadcrumb-link">
+        <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.75 1.65l.25.25v.5A.75.75 0 0 1 4.5 13H2.5v-2a.75.75 0 0 1 1.5 0v.5c0 .414.336.75.75.75h8a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-1.5 0V1.5h-7.5A1 1 0 0 0 2 2.5v10z"></path>
+        </svg>
+        返回首页
+      </a>
+    </nav>
+
+    <!-- ===== 文章卡片（GitHub Issue 风格）===== -->
+    <article class="issue-card">
+      <div class="issue-header">
+        <img class="avatar" src="<!-- ARTICLE_AVATAR -->" alt="Avatar" />
+        <div class="issue-title-group">
+          <h1 class="issue-title"><!-- ARTICLE_TITLE --></h1>
+          <div class="issue-meta">
+            <span class="issue-labels"><!-- ARTICLE_LABELS --></span>
+          </div>
+        </div>
+        <div class="issue-status open">
+          <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+            <path fill-rule="evenodd" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+          </svg>
+          已发布
+        </div>
+      </div>
+
+      <div class="issue-body">
+        <!-- ARTICLE_BODY -->
+      </div>
+
+      <div class="issue-footer">
+        <span class="created-at">
+          发表于 <relative-time datetime="<!-- ARTICLE_DATE -->" format="datetime"></relative-time>
+        </span>
+        <span class="issue-link"><!-- ARTICLE_ISSUE_LINK --></span>
+      </div>
+    </article>
+
+    <!-- ===== 评论区（链接到 GitHub Issue）===== -->
+    <section class="comments-section">
+      <div class="comments-header">
+        <h3>评论</h3>
+        <span class="counter">在 GitHub 上参与讨论</span>
+      </div>
+      <div class="comments-body">
+        <p>本文的评论托管在 GitHub Issue 中，欢迎去那里留言交流。</p>
+        <a class="btn btn-primary" href="https://github.com" target="_blank">去 Issue 评论</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="https://github.com" target="_blank">GitHub</a> &middot;
+      由 <a href="https://pages.github.com" target="_blank">GitHub Pages</a> 提供托管
+    </footer>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
